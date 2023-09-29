@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="chat-title">Chat With Your Friends!!</h1>
+      <div class="input-group-head">
+        <div class="input-group">
+          <label for="username" class="input-label">Username:</label>
+          <input type="text" id="username" class="input-field" maxlength="20" placeholder="Enter your Name" required/>
+        </div>
+        <div class="input-group">
+          <label for="group" class="input-label">Group:</label>
+          <input type="text" id="group" class="input-field" maxlength="10" placeholder="eg:123" required/>
+        </div>
+      </div>
+      <button id="join" class="action-button">Join Group</button>
+
+
+      <ul id="chat" class="chat-list">
+      </ul>
+
+      <ul id="feedback-list" class="feedback-list">
+      </ul>
+
+
+      <div class="send-group">
+        <div class="input-group message">
+          <label for="message" class="input-label">Message:</label>
+          <input type="text" id="message" class="input-field" placeholder="Enter the message" required/>
+        </div>
+        <div>
+          <button id="send" class="btn-send">Send</button>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+/* Apply styles to the body */
+body {
+    font-family: monospace;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(236 254 255);
+   
+}
+
+/* Style the container */
+.container {
+    max-width: 400px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the chat title */
+.chat-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+/* Style the input groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(248, 248, 255, 0.527);
+}
+
+.input-group-head{
+    display: flex;
+    gap: 20px;
+}
+
+.input-field {
+    
+    width:80%;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Style the action buttons */
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: rgb(86, 210, 210);
+    color: black;
+    font-size: 15px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.action-button:hover {
+    background: rgb(61, 196, 196);
+    color: white;
+}
+
+.message {
+    width: 100%; /* Adjusted to 100% to take up the entire width */
+    margin-right: 5px; /* Added margin-right for spacing */
+}
+
+.send-group {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+.btn-send {
+    all: unset;
+    background: rgb(86, 210, 210);
+    color: black;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 5px; /* Add border-radius for a slightly rounded look */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add hover effect to the send button */
+.btn-send:hover {
+    background: rgb(61, 196, 196);
+    color: white;
+}
+
+/* Style the chat list */
+.chat-list {
+    list-style: none;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 0;
+}
+
+.chat-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+.chat-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Style chat bubbles */
+.chat-bubble {
+    max-width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+
+.sent-bubble {
+    max-width: 150px;
+    background-color: #678d4b;
+    /* text-align: right; */
+    align-self: flex-end;
+}
+
+.received-bubble {
+    background-color: #d39146;
+    align-self: flex-start;
+}
+
+#feedback-list{
+    text-align: center;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #160808; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
